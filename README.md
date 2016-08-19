@@ -10,9 +10,9 @@ An electron wrapper over the Curse voice client website enabling system wide PTT
 
 ## How
 The simplest way to do system wide PTT requires to listen to input events in /dev/input.
-Any input event goes through there.The downside is that you need root access for that. If 
-instead of running the app with root access you'd give your user access to /dev/input,
-you'd open yourself to keyloggers and what not.
+Any input event goes through there.The downside is that you need access to /dev/input 
+for that, which adds one more way for keyloggers to capture your inputs. Just adding
+your user to the input group should give the required access.
 
 The wrapper simply listen to KEY_LEFTCTRL for keydown (1) and keyup (0). When the key is
 held down (2), we don't have to do anything. It then sends keydown and keyup events for
