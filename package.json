@@ -1,0 +1,22 @@
+{
+  "name": "electron-curse-ptt",
+  "version": "1.0.0",
+  "description": "An electron wrapper over the Curse voice client website enabling system wide PTT on linux",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaivoAnastetiks/electron-curse-ptt.git"
+  },
+  "author": "KaivoAnastetiks <kaivoanastetiks@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0",
+    "electron-rebuild": "^1.2.0"
+  },
+  "dependencies": {
+    "evdev": "^0.2.3"
+  }
+}
